@@ -1,0 +1,49 @@
+.btn{
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    padding: 8px 30px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 18px;
+    color: rgb(86, 86, 86);
+
+    -o-transition: background-color .2s ease-in;
+    -moz-transition: background-color .2s ease-in;
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
+}
+
+.btn:hover {
+    background-color: #e5e5e5;
+    color: rgb(0, 0, 0);
+}
+
+.btn:active {
+    background-color: #ccc;
+}
+
+/* used to show the btn div over the map */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 10;  /* display in foreground */
+    margin: 10px;
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.infowindow-content {
+    width: 300px;
+}
+
+.bottomtext {
+    margin-top: 15px;
+}
+
+/* makes the page fill the window */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}

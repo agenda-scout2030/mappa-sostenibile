@@ -3,7 +3,7 @@ var pinList = [];  // create an object
 
 var infobox;
 
-const icon = "https://raw.githubusercontent.com/agenda-scout2030/mappa-sostenibile/master/assets/giglio.png";
+const icon = "https://raw.githubusercontent.com/agenda-scout2030/mappa-sostenibile/main/assets/giglio.png";
 
 // called from bing api
 function GetMap() {
@@ -19,6 +19,7 @@ function GetMap() {
         offset: new Microsoft.Maps.Point(0, 50),  // the amount the info box bottom is shifted from the pin location
         visible: false,  // not visible in the beginning
         maxWidth: 350,
+        maxHeight: 160,
     });
     infobox.setMap(map);
 
@@ -111,9 +112,11 @@ function displayInfobox(event) {
     let body = [];  // info box body
 
     body.push('<div class="infowindow-content">');
-    body.push('<p>' + pin.metadata.description);
-    // TODO: add image
-    body.push('</p>');
+    body.push('<p>');
+    if(!(pin.metadata.image === undefined)) {  // if image is defined
+        body.push('<img class="image" src="' + pin.metadata.image + '" alt="">');
+    }
+    body.push(pin.metadata.description + '</p>');
     if (!(pin.metadata.link === undefined)) {  // if link is defined
         body.push('<div class="bottomtext"><a href="' + pin.metadata.link + '" target=_blank>Scopri di più...</a></div>');
     }

@@ -34,6 +34,14 @@
 
 .infowindow-content {
     width: 300px;
+    margin-right: 10px; /* prevent horizontal scrollbar */
+}
+
+.image {
+    height: 90px;
+    max-width: 160px;
+    float: right;
+    margin-left: 10px;
 }
 
 .bottomtext {

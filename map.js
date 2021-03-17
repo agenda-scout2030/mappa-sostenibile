@@ -16,7 +16,7 @@ function GetMap() {
 
     // initialize infobox for future use
     infobox = new Microsoft.Maps.Infobox(map.getCenter(), {
-        offset: new Microsoft.Maps.Point(0, 50),  // the amount the info box bottom is shifted from the pin location
+        offset: new Microsoft.Maps.Point(0, 30),  // the amount the info box bottom is shifted from the pin location
         visible: false,  // not visible in the beginning
         maxWidth: 350,
         maxHeight: 160,

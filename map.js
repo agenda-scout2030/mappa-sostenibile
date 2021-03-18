@@ -3,7 +3,8 @@ var pinList = [];  // create an object
 
 var infobox;
 
-const imageBase = "https://raw.githubusercontent.com/agenda-scout2030/mappa-sostenibile/main/assets/goal_";
+const imageBase = "https://raw.githubusercontent.com/agenda-scout2030/mappa-sostenibile/main/assets/goals_images/";
+const iconBase = "https://raw.githubusercontent.com/agenda-scout2030/mappa-sostenibile/main/assets/goals_icons/";
 
 // called from bing api
 function GetMap() {
@@ -35,7 +36,7 @@ function GetMap() {
                 new Microsoft.Maps.Location(pinInfo.location.lat, pinInfo.location.lng), {
                     title: pinInfo.name,
                     subTitle: pinInfo.goalText,
-                    icon: imageBase + 'icon_' + pinInfo.goalNum + '.jpg',
+                    icon: iconBase + pinInfo.goalNum + '.jpg',
                 }
             );
 

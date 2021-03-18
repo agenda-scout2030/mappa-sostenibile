@@ -3,7 +3,7 @@ var pinList = [];  // create an object
 
 var infobox;
 
-const iconBase = "https://raw.githubusercontent.com/agenda-scout2030/mappa-sostenibile/main/assets/goal_";
+const iconBase = "https://raw.githubusercontent.com/agenda-scout2030/mappa-sostenibile/main/assets/goal_icon_";
 
 // called from bing api
 function GetMap() {

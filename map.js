@@ -3,7 +3,7 @@ var pinList = [];  // create an object
 
 var infobox;
 
-const icon = "https://raw.githubusercontent.com/agenda-scout2030/mappa-sostenibile/main/assets/giglio.png";
+const iconBase = "https://raw.githubusercontent.com/agenda-scout2030/mappa-sostenibile/main/assets/goal_";
 
 // called from bing api
 function GetMap() {
@@ -34,7 +34,8 @@ function GetMap() {
             var pin = new Microsoft.Maps.Pushpin(
                 new Microsoft.Maps.Location(pinInfo.location.lat, pinInfo.location.lng), {
                     title: pinInfo.name,
-                    icon: icon,
+                    subTitle: pinInfo.goalText,
+                    icon: iconBase + pinInfo.goalNum + '.jpg',
                 }
             );
 
@@ -77,6 +78,14 @@ function parseMarkers() {
                 switch (col) {
                     case '2':
                         pinList[row].name = val;
+                        break;
+                    case '10':
+                        let parts = val.split(')');
+                        pinList[row].goalNum = parts[0];
+                        pinList[row].goalText = parts[1];
+                        break;
+                    case '11':
+                        pinList[row].date = val;
                         break;
                     case '7':
                         pinList[row].title = val;

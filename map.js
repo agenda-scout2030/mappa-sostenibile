@@ -3,7 +3,7 @@ var pinList = [];  // create an object
 
 var infobox;
 
-const iconBase = "https://raw.githubusercontent.com/agenda-scout2030/mappa-sostenibile/main/assets/goal_icon_";
+const imageBase = "https://raw.githubusercontent.com/agenda-scout2030/mappa-sostenibile/main/assets/goal_";
 
 // called from bing api
 function GetMap() {
@@ -35,7 +35,7 @@ function GetMap() {
                 new Microsoft.Maps.Location(pinInfo.location.lat, pinInfo.location.lng), {
                     title: pinInfo.name,
                     subTitle: pinInfo.goalText,
-                    icon: iconBase + pinInfo.goalNum + '.jpg',
+                    icon: imageBase + 'icon_' + pinInfo.goalNum + '.jpg',
                 }
             );
 
@@ -122,9 +122,10 @@ function displayInfobox(event) {
 
     body.push('<div class="infowindow-content">');
     body.push('<p>');
-    if(!(pin.metadata.image === undefined)) {  // if image is defined
+    /*if(!(pin.metadata.image === undefined)) {  // if image is defined
         body.push('<img class="image" src="' + pin.metadata.image + '" alt="">');
-    }
+    }*/
+    body.push('<img class="image" src="' + imageBase + pin.metadata.goalNum + '.jpg' + '" alt="">')
     body.push(pin.metadata.description + '</p>');
     if (!(pin.metadata.link === undefined)) {  // if link is defined
         body.push('<div class="bottomtext"><a href="' + pin.metadata.link + '" target=_blank>Scopri di più...</a></div>');

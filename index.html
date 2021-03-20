@@ -6,12 +6,30 @@
     <link href=style.css rel=stylesheet>
 </head>
 <body>
+
+<!-- load jquery library -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<!-- info button -->
+<img width="64" height="64" class="infoButton" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Info_icon-72a7cf.svg/1200px-Info_icon-72a7cf.svg.png"  alt="Info"/>
+
+<!-- info popup -->
+<div class="popupBackground">
+    <span class="helper"></span>
+    <div class="innerPopupBox">
+        <div class="popupCloseButton">&times;</div>
+        <p>Add any HTML content<br />inside the popup box!</p>
+    </div>
+</div>
+<script type="text/javascript" src="popup.js"></script>
+
+<!-- add activity button -->
 <div id="addBtn" class="overlay" hidden>
     <button class="btn" onclick=" window.open('https://docs.google.com/forms/d/e/1FAIpQLScIvJxCeU-96ODoQMybQMhO95yMjB0hBftsOV0272J6PWDK6g/viewform?usp=sf_link','_blank')"> Aggiungi Attività </button>
 </div>
-
 <script type="text/javascript" src="load_data.js"></script>
 
+<!-- map -->
 <div id="myMap"></div>
 <script type="text/javascript" src="map.js"></script>
 </body>

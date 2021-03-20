@@ -7,8 +7,6 @@
 </head>
 <body>
 
-
-
 <div class="form-style-10">
     <h1>AGGIUNGI UN'ATTIVITÀ<span> AGENDA 2030 <br> * campo obbligatorio </span></h1>
     <form>
@@ -81,6 +79,7 @@
 
             <label> Indirizzo * <input type="text" name="field6" /></label>
 
+            <input type= "submit" value= "Cerca" />
 
 
                 <label> Seleziona l'indirizzo tra le alternative *  </label>
@@ -107,8 +106,18 @@
 
             </div>
 
+
+
+
+<script>
+function clickAlert() {
+alert("Grazie per aver compilato il form");
+}
+</script>
+
         <div class="button-section">
-            <input type="submit" name="Sign Up" />
+
+            <input type="submit" value="Invia" onclick="clickAlert()"  />
 
         </div>
     </form>

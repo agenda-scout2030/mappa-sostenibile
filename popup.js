@@ -1,3 +1,11 @@
+
+function myFunction() {
+    alert("grazie per aver compilato il form");
+}
+
+
+
+
 $(window).load(function () {
     const popup = $('.popupBackground')
 

@@ -83,7 +83,7 @@ function parseMarkers() {
                     case '10':
                         let parts = val.split(')');
                         pinList[row].goalNum = parts[0];
-                        pinList[row].goalText = parts[1];
+                        pinList[row].goalText = parts[0] + parts[1];
                         break;
                     case '11':
                         pinList[row].date = val;

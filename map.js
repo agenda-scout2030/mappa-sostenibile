@@ -36,7 +36,7 @@ function GetMap() {
                 new Microsoft.Maps.Location(pinInfo.location.lat, pinInfo.location.lng), {
                     title: pinInfo.name,
                     subTitle: pinInfo.goalText,
-                    icon: iconBase + pinInfo.goalNum + '.jpg',
+                    icon: iconBase + pinInfo.goalNum + '.png',
                 }
             );
 
@@ -83,7 +83,7 @@ function parseMarkers() {
                     case '10':
                         let parts = val.split(')');
                         pinList[row].goalNum = parts[0];
-                        pinList[row].goalText = parts[0] + parts[1];
+                        pinList[row].goalText = parts[1];
                         break;
                     case '11':
                         pinList[row].date = val;

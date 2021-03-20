@@ -54,6 +54,7 @@ function GetMap() {
 
     // once map initialization is finished show the add button
     document.getElementById('addBtn').removeAttribute('hidden');
+    document.getElementById('infoBtn').removeAttribute('hidden');
 }
 
 // parse markers from row input json

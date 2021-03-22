@@ -2,15 +2,15 @@
     border: 1px solid #ddd;
     background-color: #ffffff;
     padding: 8px 30px;
-    font-family: Roboto, Daytona, Arial, sans-Daytona;
+    font-family: Daytona, Daytona, Arial, sans-Daytona;
     font-size: 18px;
     color: rgb(86, 86, 86);
     cursor: pointer;
 
     -o-transition: background-color .2s ease-in;
-    -moz-transition: background-color .2s ease-in;
-    -webkit-transition: background-color .2s ease-in;
-    transition: background-color .2s ease-in;
+	-moz-transition: background-color .2s ease-in;
+	-webkit-transition: background-color .2s ease-in;
+	transition: background-color .2s ease-in;
 }
 
 .btn:hover {
@@ -32,6 +32,7 @@
     text-align:center;
     top:0;
     width:100%;
+	overflow-y:scroll;
     z-index:10000;
 }
 .popupBackground .helper{
@@ -61,7 +62,7 @@
     font-family: arial, Daytona;
     font-weight: bold;
     position: absolute;
-    top: -20px;
+    top: -5px;
     right: -20px;
     font-size: 25px;
     line-height: 30px;
@@ -148,7 +149,7 @@ body {
 	-moz-border-radius: 10px 10px 0 0;
 	color: #fff;
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
-	font: Daytona 30px 'Daytona', Daytona;
+	font: 30px 'Daytona', Daytona;
 	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
 	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
 	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
@@ -218,7 +219,7 @@ body {
 	-moz-border-radius: 5px;
 	color: #fff;
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
-	font: Daytona 30px 'Daytona', Daytona;
+	font: 30px 'Daytona', Daytona;
 	-moz-box-shadow: inset 0px 2px 2px 0px rgba(65, 14, 130, 0.17);
 	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(65, 14, 130, 0.17);
 	box-shadow: inset 0px 2px 2px 0px rgba(65, 14, 130, 0.17);

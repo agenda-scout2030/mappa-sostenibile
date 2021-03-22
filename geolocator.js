@@ -1,5 +1,3 @@
-//const axios = require('axios');
-
 const data = {
     addressdetails: 1,
     city: 'Milano',

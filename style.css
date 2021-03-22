@@ -157,11 +157,11 @@ body {
 .form-style-10 h1 > span{
 	display: block;
 	margin-top: 2px;
-	font: 13px Arial, Helvetica, sans-Daytona;
+	font: 13px Daytona, Helvetica, sans-Daytona;
 }
 .form-style-10 label{
 	display: block;
-	font: 13px Arial, Helvetica, sans-Daytona;
+	font: 13px Daytona, Helvetica, sans-Daytona;
 	color: #888;
 	margin-bottom: 15px;
 }

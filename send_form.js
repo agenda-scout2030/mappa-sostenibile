@@ -16,22 +16,21 @@ const goals = [
     '15) La vita sulla terra',
     '16) Pace, giustizia e istituzioni forti',
     '17) Partnership per gli obiettivi',
-
 ]
 
 function sendForm(){
-    let a = document.getElementById("data").value;
-    console.log(document.getElementById("goal").selectedIndex);
+    let date_parts = document.getElementById("data").value.split('-');
+    let pos = positions[document.getElementById("scelta").selectedIndex]
     const data = {
         'entry.498570121': document.getElementById("nomeGruppo").value,  // nome gruppo
-        'entry.1599795084': "45.5555555",  // latitude
-        'entry.874512289' : "11.3344343",  // longitude
+        'entry.1599795084': pos.lat,  // latitude
+        'entry.874512289' : pos.lng,  // longitude
         'entry.1208166438': document.getElementById("titolo").value,  // titolo attività
         'entry.686134094':  document.getElementById("descrizione").value,  // descrizione attività
-        'entry.381325376':  document.getElementById("goal").selectedIndex,  // goal
-        'entry.316786119_year': "2020",
-        'entry.316786119_month': "03",
-        'entry.316786119_day': "01",
+        'entry.381325376':  goals[document.getElementById("goal").selectedIndex-1],  // goal
+        'entry.316786119_year': date_parts[0],
+        'entry.316786119_month': date_parts[1],
+        'entry.316786119_day': date_parts[2],
         'entry.386410129': document.getElementById("link").value,  // link
         'entry.1000183872': "",  // image
         'draftResponse': [],

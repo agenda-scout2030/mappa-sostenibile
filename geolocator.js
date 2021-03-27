@@ -26,7 +26,7 @@ function geolocate() {
                 newOption.setAttribute("value", i.toString());
                 newOption.innerHTML = data[i]["display_name"];
                 menu.appendChild(newOption);
-                positions.append({
+                positions.push({
                     lat: data[i]["lat"],
                     lng: data[i]["lon"],
                 });

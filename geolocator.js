@@ -1,5 +1,4 @@
 function geolocate() {
-    alert("Grazie per aver compilato il form");
     const data = {
         addressdetails: 1,
         city: document.getElementById("citta").value,

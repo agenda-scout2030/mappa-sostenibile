@@ -1,3 +1,5 @@
+var positions;
+
 function geolocate() {
     const data = {
         addressdetails: 1,
@@ -18,11 +20,16 @@ function geolocate() {
             for (let j = 0; menu.children.length > 0; j++) {
                 menu.removeChild(menu.children[0]);
             }
+            positions = [];
             for (let i = 0; i < data.length; i++) {
                 let newOption = document.createElement('option');
                 newOption.setAttribute("value", i.toString());
                 newOption.innerHTML = data[i]["display_name"];
                 menu.appendChild(newOption);
+                positions.append({
+                    lat: data[i]["lat"],
+                    lng: data[i]["lon"],
+                });
             }
         },
     });

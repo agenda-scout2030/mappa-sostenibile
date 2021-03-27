@@ -1,5 +1,21 @@
 const goals = [
-    'benessrer',
+    '1) Sconfiggere la povertà',
+    '2) Sconfiggere la fame',
+    '3) Salute e benessere',
+    '4) Istruzione di qualità',
+    '5) Parità di genere',
+    '6) Acqua pulita',
+    '7) Energia pulita',
+    '8) Lavoro dignitoso e crescita economica',
+    '9) Imprese, innovazione e infrastrutture',
+    '10) Ridurre le disuguaglianze',
+    '11) Città sostenibili' ,
+    '12) Consumo e produzione responsabili',
+    '13) Lotta contro il cambiamento climatico',
+    '14) Vita sott acqua',
+    '15) Vita sulla terra',
+    '16) Pace, giustizia e istituzioni solide',
+    '17) Partnership per gli obiettivi',
 
 ]
 

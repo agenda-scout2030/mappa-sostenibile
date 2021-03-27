@@ -7,6 +7,9 @@
 </head>
 <body>
 
+<!-- load jquery library -->
+<script src="lib/jquery-1.11.0.min.js"></script>
+
 <div class="form-style-10">
     <h1>AGGIUNGI UN'ATTIVITÀ<span> AGENDA 2030 <br> * campo obbligatorio </span></h1>
     <form>
@@ -79,7 +82,7 @@
 
             <label> Indirizzo * <input type="text" id="strada" /></label>
 
-            <input type= "submit" value= "Cerca" />
+            <input type= "submit" value= "Cerca" onclick="geolocate()" />
 
 
                 <label> Seleziona l'indirizzo tra le alternative *  </label>
@@ -106,8 +109,7 @@
 
             </div>
 
-
-
+<script src="geolocator.js"></script>
 
 <script>
 function clickAlert() {

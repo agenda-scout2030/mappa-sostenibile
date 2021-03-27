@@ -123,7 +123,7 @@ body {
 
 
 .form-style-10{
-	width:450px;
+	width:700px;
 	padding:30px;
 	margin:40px auto;
 	background: #FFF;
@@ -210,6 +210,21 @@ body {
 	color: #fff;
 	margin-top: -3px;
 }
+.button {
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+
+}
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #7002b0	;} /* Blue */
+
 .form-style-10 input[type="button"],
 .form-style-10 input[type="submit"]{
 	background: #410E82;

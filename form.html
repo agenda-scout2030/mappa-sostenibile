@@ -82,15 +82,13 @@
 
             <label> Indirizzo * <input type="text" id="strada" /></label>
 
-            <button type="button" onclick="geolocate();">Cerca</button>
+            <button type="button" class="button button2" onclick="geolocate();">Cerca</button>
 
 
                 <label> Seleziona l'indirizzo tra le alternative *  </label>
                 <select id = "scelta">
                     <option value="0"></option>
-                    <option value="1">Catanzaro</option>
-                    <option value="2">Catanzaro</option>
-                    <option value="3">Catanzaro</option>
+
                     </select>
 
         </div>
@@ -119,8 +117,9 @@ alert("Grazie per aver compilato il form");
 
         <div class="button-section">
 
-            <input type="submit" value="Invia" onclick="clickAlert()"  />
-
+            <button type = "button" class="button button2" onclick="clickAlert()" > Invia </button>
+            <br>
+            <i>Source: openmaps </i>
         </div>
     </form>
 </div>

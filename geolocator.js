@@ -1,4 +1,4 @@
-var positions;
+var positions = [];
 
 function geolocate() {
     const data = {

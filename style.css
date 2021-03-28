@@ -2,7 +2,7 @@
     border: 1px solid #ddd;
     background-color: #ffffff;
     padding: 8px 30px;
-    font-family: Daytona, Daytona, Arial, sans-Daytona;
+    font-family: Daytona, Daytona;
     font-size: 18px;
     color: rgb(86, 86, 86);
     cursor: pointer;
@@ -141,7 +141,7 @@ body {
 	margin-bottom: 15px;
 }
 .form-style-10 h1{
-	background: #410E82;
+	background: #7002b0;
 	padding: 20px 30px 15px 30px;
 	margin: -30px -30px 30px -30px;
 	border-radius: 10px 10px 0 0;
@@ -153,7 +153,7 @@ body {
 	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
 	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
 	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
-	border: 1px solid #257C9E;
+	border: 1px solid #7002b0;
 }
 .form-style-10 h1 > span{
 	display: block;
@@ -194,11 +194,11 @@ body {
 
 .form-style-10 .section{
 	font: normal 20px 'Bitter', Daytona;
-	color: #410E82;
+	color: #7002b0;
 	margin-bottom: 5px;
 }
 .form-style-10 .section span {
-	background: #410E82;
+	background: #7002b0;
 	padding: 5px 10px 5px 10px;
 	position: absolute;
 	border-radius: 50%;
@@ -220,10 +220,11 @@ body {
 	font-size: 16px;
 	margin: 4px 2px;
 	cursor: pointer;
+	font-family: Daytona;
 
 }
-.button1 {background-color: #4CAF50;} /* Green */
-.button2 {background-color: #7002b0	;} /* Blue */
+
+.button2 {background-color: #7002b0	;} /* viola */
 
 .form-style-10 input[type="button"],
 .form-style-10 input[type="submit"]{

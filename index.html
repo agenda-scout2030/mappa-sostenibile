@@ -10,6 +10,10 @@
 <!-- load jquery library -->
 <script src="lib/jquery-1.11.0.min.js"></script>
 
+<script
+        src = "popup.js">
+</script>
+
 <!-- info button -->
 <img width="64" height="64" id="infoBtn" class="infoButton" hidden src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Info_icon-72a7cf.svg/1200px-Info_icon-72a7cf.svg.png"  alt="Info"/>
 
@@ -18,20 +22,24 @@
     <span class="helper"></span>
     <div class="innerPopupBox">
 
-        <div class="popupCloseButton">&times;</div>
+        <!--<div class="popupCloseButton">x</div> -->
+
         <img src="assets/agenda2030_modena.jpeg" width="100%" height="100%" alt="Info">
         <p style="text-align: left">
             Cari scout, <br>
             <br>
-            l’Agenda 2030 incarna tanti dei valori in cui crediamo ed educhiamo, ci stimola ad agire, ci aiuta a
-            sperare, ci impegna a realizzare un sogno condiviso. Per rendere ogni nostra azione un seme fecondo di
-            speranza, abbiamo creato questa mappa con lo scopo di condividere con tutti i nostri fratelli scout il
-            nostro impegno per rendere il mondo un posto migliore. Attraverso il bottone qui sopra potrete segnalare
-            e raccontare le vostre attività, i vostri servizi, i vostri progetti all’insegna dei 17 goals dell’Agenda. <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
             <br>
-            Questa mappa ci ricorda che con le nostre azioni possiamo essere testimoni di un cambiamento. E tutto
-            questo nel modo più bello possibile: colorando il Mondo!
+
+            <center> <a href ="https://www.wikipedia.com/wiki/naples"> scopri di più</a></center>
+
+        <!-- bottone di chiusura del popup -->
+
         </p>
+        <button  type = "button" class="button button2" onclick="chiudiPopup()" > VAI ALLA MAPPA   </button>
     </div>
 </div>
 <script type="text/javascript" src="popup.js"></script>

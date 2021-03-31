@@ -58,7 +58,7 @@ function sendForm(){
             url: 'https://docs.google.com/forms/d/e/1FAIpQLScIvJxCeU-96ODoQMybQMhO95yMjB0hBftsOV0272J6PWDK6g/formResponse',
             data: data,
             error: function(xhr, status, error){
-                document.location.href = "https://agenda-scout2030.github.io/mappa-sostenibile/final_page.html";
+                document.location.href = "final_page.html";
             }
         });
     }

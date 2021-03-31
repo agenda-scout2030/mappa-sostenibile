@@ -24,7 +24,7 @@
 
 /* Popup box BEGIN */
 .popupBackground{
-    background:rgba(65, 14, 130,1);
+    background:rgba(65, 14, 130,0.4);
     cursor:pointer;
     display:none;
     height:100%;

@@ -201,10 +201,9 @@ body {
 	margin: 4px 2px;
 	cursor: pointer;
 	font-family: 'Google Sans', Roboto, Helvetica, Arial, sans-serif;;
-
+	background-color: #7002b0;  /* viola */
+	font-weight: bold;
 }
-
-.button2 {background-color: #7002b0	;} /* viola */
 
 .form-style-10 input[type="button"],
 .form-style-10 input[type="submit"]{

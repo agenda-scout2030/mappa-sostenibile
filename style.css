@@ -103,7 +103,7 @@ body {
 
 
 .form-style-10{
-	width:700px;
+	max-width:700px;
 	padding:30px;
 	margin:40px auto;
 	background: #FFF;
@@ -205,12 +205,6 @@ body {
 	font-weight: bold;
 }
 
-@media only screen and (max-width: 1000px) {
-	.button {
-		background-color: red;
-	}
-}
-
 .form-style-10 input[type="button"],
 .form-style-10 input[type="submit"]{
 	background: #410E82;
@@ -241,4 +235,10 @@ body {
 	color: #4D4D4D;
 	margin-top: 10px;
 	text-align: right;
+}
+
+@media only screen and (max-width: 1000px) {
+	.button {
+		background-color: red;
+	}
 }

@@ -19,12 +19,6 @@ $(window).load(function () {
             $('.popupBackground').hide();
         }
     });
-
-
-    // hide popup when close button is clocked
-    $('.popupCloseButton').click(function(){
-        $('.popupBackground').hide();
-    });
 });
 
 function chiudiPopup() {

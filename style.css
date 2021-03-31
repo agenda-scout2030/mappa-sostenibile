@@ -2,7 +2,7 @@
     border: 1px solid #ddd;
     background-color: #ffffff;
     padding: 8px 30px;
-    font-family: Daytona, Daytona;
+    font-family: 'Google Sans', Roboto, Helvetica, Arial, sans-serif;;
     font-size: 18px;
     color: rgb(86, 86, 86);
     cursor: pointer;
@@ -24,7 +24,7 @@
 
 /* Popup box BEGIN */
 .popupBackground{
-    background:rgba(65, 14, 130,.4);
+    background:rgba(65, 14, 130,1);
     cursor:pointer;
     display:none;
     height:100%;
@@ -53,28 +53,8 @@
     border-radius: 8px;
     padding: 15px 5%;
 }
-.popupCloseButton {
-    background-color: #fff;
-    border: 3px solid #999;
-    border-radius: 50px;
-    cursor: pointer;
-    display: inline-block;
-    font-family: arial, Daytona;
-    font-weight: bold;
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    font-size: 19px;
-    line-height: 30px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-}
 .innerPopupBox {
     cursor: default;
-}
-.popupCloseButton:hover {
-    background-color: #ccc;
 }
 .infoButton {
     position: absolute;
@@ -149,7 +129,7 @@ body {
 	-moz-border-radius: 10px 10px 0 0;
 	color: #fff;
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
-	font: 30px 'Daytona', Daytona;
+	font: 30px 'Google Sans', Roboto, Helvetica, Arial, sans-serif;
 	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
 	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
 	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
@@ -158,11 +138,11 @@ body {
 .form-style-10 h1 > span{
 	display: block;
 	margin-top: 2px;
-	font: 13px Daytona, Helvetica, sans-Daytona;
+	font: 13px 'Google Sans', Roboto, Helvetica, Arial, sans-serif;
 }
 .form-style-10 label{
 	display: block;
-	font: 13px Daytona, Helvetica, sans-Daytona;
+	font: 13px 'Google Sans', Roboto, Helvetica, Arial, sans-serif;
 	color: #888;
 	margin-bottom: 15px;
 }
@@ -193,7 +173,7 @@ body {
 }
 
 .form-style-10 .section{
-	font: normal 20px 'Bitter', Daytona;
+	font: normal 20px 'Google Sans', Roboto, Helvetica, Arial, sans-serif;
 	color: #7002b0;
 	margin-bottom: 5px;
 }
@@ -220,7 +200,7 @@ body {
 	font-size: 16px;
 	margin: 4px 2px;
 	cursor: pointer;
-	font-family: Daytona;
+	font-family: 'Google Sans', Roboto, Helvetica, Arial, sans-serif;;
 
 }
 
@@ -235,7 +215,7 @@ body {
 	-moz-border-radius: 5px;
 	color: #fff;
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
-	font: 30px 'Daytona', Daytona;
+	font: 30px 'Google Sans', Roboto, Helvetica, Arial, sans-serif;
 	-moz-box-shadow: inset 0px 2px 2px 0px rgba(65, 14, 130, 0.17);
 	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(65, 14, 130, 0.17);
 	box-shadow: inset 0px 2px 2px 0px rgba(65, 14, 130, 0.17);
@@ -252,7 +232,7 @@ body {
 .form-style-10 .privacy-policy{
 	float: right;
 	width: 250px;
-	font: 12px Arial, Helvetica, sans-Daytona;
+	font: 12px 'Google Sans', Roboto, Helvetica, Arial, sans-serif;
 	color: #4D4D4D;
 	margin-top: 10px;
 	text-align: right;

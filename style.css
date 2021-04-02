@@ -243,6 +243,11 @@ body {
 	text-align: right;
 }
 
+.openStreetMapsLink {
+	float: right;
+	margin-bottom: 15px;
+}
+
 @media only screen and (max-width: 1000px) {
 	.button {
 		font-size: 14px;
@@ -252,13 +257,25 @@ body {
 	}
 	.overlay {
 		top: 100%;
-		-ms-transform: translate(-50%, -250%);
-		transform: translate(-50%, -250%);
+		-ms-transform: translate(-50%, -275%);
+		transform: translate(-50%, -275%);
 	}
 	.section {
 		margin-left: 15px;
 	}
+	.openStreetMapsLink {
+		font-size: 12px;
+	}
 	.previewText {
+		font-size: 12px;
+	}
+	.form-style-10 .section {
+		font-size: 12px;
+	}
+	.form-style-10 h1 {
+		font-size: 14px;
+	}
+	.form-style-10 label {
 		font-size: 12px;
 	}
 }

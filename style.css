@@ -249,10 +249,12 @@ body {
 	margin-top: 10px;
 	text-align: right;
 }
-
 .openStreetMapsLink {
 	float: right;
 	margin-bottom: 15px;
+}
+.descriptionTitle {
+	font-size: 30px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -286,6 +288,10 @@ body {
 	.form-style-10 finaltext {
 		font-size: 12px;
 	}
-
-
+	.descriptionText {
+		font-size: 12px;
+	}
+	.descriptionTitle {
+		font-size: 18px;
+	}
 }

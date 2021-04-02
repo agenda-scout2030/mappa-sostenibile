@@ -252,9 +252,7 @@ body {
 	.button {
 		font-size: 14px;
 	}
-	.btn {
-		font-size: 14px;
-	}
+
 	.overlay {
 		top: 100%;
 		-ms-transform: translate(-50%, -275%);
@@ -278,4 +276,15 @@ body {
 	.form-style-10 label {
 		font-size: 12px;
 	}
+	.form-style-10 .section {
+		font-size: 12px;
+	}
+	.form-style-10 h1 {
+		font-size: 14px;
+	}
+	.form-style-10 label {
+		font-size: 12px;
+	}
+
+
 }

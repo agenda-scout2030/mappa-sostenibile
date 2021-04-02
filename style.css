@@ -245,11 +245,20 @@ body {
 
 @media only screen and (max-width: 1000px) {
 	.button {
-		background-color: red;
+		font-size: 14px;
+	}
+	.btn {
+		font-size: 14px;
 	}
 	.overlay {
 		top: 100%;
 		-ms-transform: translate(-50%, -250%);
 		transform: translate(-50%, -250%);
+	}
+	.section {
+		margin-left: 15px;
+	}
+	.previewText {
+		font-size: 12px;
 	}
 }

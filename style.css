@@ -6,6 +6,7 @@
     font-size: 18px;
     color: rgb(86, 86, 86);
     cursor: pointer;
+	pointer-events:all;
 
     -o-transition: background-color .2s ease-in;
 	-moz-transition: background-color .2s ease-in;
@@ -73,6 +74,11 @@
     margin: 10px;
     -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 300px;
+	pointer-events:none;
 }
 
 .infowindow-content {
@@ -240,5 +246,10 @@ body {
 @media only screen and (max-width: 1000px) {
 	.button {
 		background-color: red;
+	}
+	.overlay {
+		top: 100%;
+		-ms-transform: translate(-50%, -250%);
+		transform: translate(-50%, -250%);
 	}
 }

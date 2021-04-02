@@ -183,6 +183,13 @@ body {
 	color: #7002b0;
 	margin-bottom: 5px;
 }
+
+.form-style-10 finaltext{
+	font: normal 24px 'Daytona', Daytona, Daytona, sans-Daytona, sans-serif;
+	color: #000000;
+	margin-bottom: 5px;
+}
+
 .form-style-10 .section span {
 	background: #7002b0;
 	padding: 5px 10px 5px 10px;
@@ -276,13 +283,7 @@ body {
 	.form-style-10 label {
 		font-size: 12px;
 	}
-	.form-style-10 .section {
-		font-size: 12px;
-	}
-	.form-style-10 h1 {
-		font-size: 14px;
-	}
-	.form-style-10 label {
+	.form-style-10 finaltext {
 		font-size: 12px;
 	}
 

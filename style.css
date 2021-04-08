@@ -269,7 +269,9 @@ body {
 	.button {
 		font-size: 14px;
 	}
-
+	background {
+		transform: translate(-150%,-200%)
+	}
 	.overlay {
 		top: 100%;
 		-ms-transform: translate(-50%, -275%);

@@ -274,11 +274,12 @@ body {
 }
 .background {
 	position: absolute;
-	background-image:url('assets/background3.png');
-	height: 100%;
+	background-image:url('assets/sfondo_trasparente2.png');
+	height: 150%;
 	background-repeat:no-repeat;
 	background-position: center;
 	background-size: auto;
+
 }
 
 @media only screen and (max-width: 1000px) {

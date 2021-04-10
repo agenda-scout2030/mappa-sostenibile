@@ -1,10 +1,10 @@
 .btn{
     border: 1px solid #ddd;
-    background-color: #ff6eec;
+    background-color: #7002b0;
     padding: 11px 35px;
     font-family: 'Google Sans', Roboto, Helvetica, Arial, sans-serif;;
     font-size: 20px;
-    color: rgb(86, 86, 86);
+    color: white;
     cursor: pointer;
 	pointer-events:all;
 

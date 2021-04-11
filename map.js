@@ -12,7 +12,7 @@ function GetMap() {
 
     map = new Microsoft.Maps.Map('#myMap', {
         center: new Microsoft.Maps.Location(44.643, 10.925229),
-        zoom: 17,
+        zoom: 12,
     });
 
     // initialize infobox for future use

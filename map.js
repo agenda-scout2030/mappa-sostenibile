@@ -81,33 +81,30 @@ function parseMarkers() {
                     case '2':
                         pinList[row].name = val;
                         break;
-                    case '10':
+                    case '3':
                         let parts = val.split(')');
                         pinList[row].goalNum = parts[0];
                         pinList[row].goalText = parts[1];
                         break;
-                    case '11':
+                    case '4':
                         pinList[row].date = val;
+                        break;
+                    case '5':
+                        pinList[row].location.lat = val;
+                        break;
+                    case '6':
+                        pinList[row].location.lng = val;
                         break;
                     case '7':
                         pinList[row].title = val;
                         break;
-                    case '3':
+                    case '8':
                         pinList[row].description = val;
                         break;
-                    case '4':
-                        pinList[row].location.lat = val;
-                        break;
-                    case '5':
-                        pinList[row].location.lng = val;
-                        break;
-                    case '6':
+                    case '9':
                         pinList[row].link = val;
                         break;
-                    case '8':
-                        pinList[row].image = val;
-                        break;
-                    case '9':
+                    case '10':
                         pinList[row].approved = val;
                         break;
                 }

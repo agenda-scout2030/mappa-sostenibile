@@ -121,11 +121,8 @@ function displayInfobox(event) {
 
     body.push('<div class="infowindow-content">');
     body.push('<p>');
-    /*if(!(pin.metadata.image === undefined)) {  // if image is defined
-        body.push('<img class="image" src="' + pin.metadata.image + '" alt="">');
-    }*/
     body.push('<img class="image" src="' + imageBase + pin.metadata.goalNum + '.jpg' + '" alt="">')
-    body.push(pin.metadata.description + '</p>');
+    body.push(pin.metadata.description + '<br/>' + '<br/>' + pin.metadata.date + '</p>');
     if (!(pin.metadata.link === undefined)) {  // if link is defined
         body.push('<div class="bottomtext"><a href="' + pin.metadata.link + '" target=_blank>Scopri di più...</a></div>');
     }

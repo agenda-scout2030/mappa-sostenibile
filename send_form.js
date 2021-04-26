@@ -39,8 +39,8 @@ function sendForm(){
         let pos = positions[document.getElementById("scelta").selectedIndex]
         const data = {
             'entry.1647215669': name,  // nome gruppo
-            'entry.468238840': pos.lat.toString(),  // latitude
-            'entry.415691257' : pos.lng.toString(),  // longitude
+            'entry.468238840': Number(pos.lat).toFixed(6),  // latitude
+            'entry.415691257' : Number(pos.lng).toFixed(6),  // longitude
             'entry.1693764111': title,  // titolo attività
             'entry.1037527314': description,  // descrizione attività
             'entry.1851639960': goals[goalNum-1],  // goal

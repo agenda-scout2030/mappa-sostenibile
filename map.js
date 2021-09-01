@@ -57,10 +57,19 @@ function GetMap() {
     document.getElementById('infoBtn').removeAttribute('hidden');
 }
 
+function getValue(elem) {
+    if(elem === null)
+        return "";
+    if(elem.v === null)
+        return "";
+    return elem.v.toString();
+}
+
 // parse markers from row input json
 function parseMarkers() {
     let text;
     text = jsonData;
+    text = text.split("setResponse(")[1].slice(0, -2);
     if (text !== "") {
         let rows = JSON.parse(text).table.rows;
         for(let i = 0; i < rows.length; i++) {
@@ -92,9 +101,6 @@ function displayInfobox(event) {
 
     body.push('<div class="infowindow-content">');
     body.push('<p>');
-    /*if(!(pin.metadata.image === undefined)) {  // if image is defined
-        body.push('<img class="image" src="' + pin.metadata.image + '" alt="">');
-    }*/
     body.push('<img class="image" src="' + imageBase + pin.metadata.goalNum + '.jpg' + '" alt="">')
     body.push(pin.metadata.description + '<br/>' + '<br/>' + pin.metadata.date + '</p>');
     if (!(pin.metadata.link === "")) {  // if link is defined

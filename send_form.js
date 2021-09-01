@@ -38,16 +38,16 @@ function sendForm(){
         let dateParts = dateString.split('-');
         let pos = positions[document.getElementById("scelta").selectedIndex]
         const data = {
-            'entry.498570121': name,  // nome gruppo
-            'entry.1599795084': pos.lat,  // latitude
-            'entry.874512289' : pos.lng,  // longitude
-            'entry.1208166438': title,  // titolo attività
-            'entry.686134094': description,  // descrizione attività
-            'entry.381325376': goals[goalNum-1],  // goal
-            'entry.316786119_year': dateParts[0],
-            'entry.316786119_month': dateParts[1],
-            'entry.316786119_day': dateParts[2],
-            'entry.386410129': document.getElementById("link").value,  // link
+            'entry.1647215669': name,  // nome gruppo
+            'entry.468238840': Number(pos.lat).toFixed(6),  // latitude
+            'entry.415691257' : Number(pos.lng).toFixed(6),  // longitude
+            'entry.1693764111': title,  // titolo attività
+            'entry.1037527314': description,  // descrizione attività
+            'entry.1851639960': goals[goalNum-1],  // goal
+            'entry.564386048_year': dateParts[0],
+            'entry.564386048_month': dateParts[1],
+            'entry.564386048_day': dateParts[2],
+            'entry.1833049209': document.getElementById("link").value,  // link
             'entry.1000183872': "",  // image
             'draftResponse': [],
             'pageHistory': 0
@@ -55,7 +55,7 @@ function sendForm(){
 
         $.ajax({
             type: "POST",
-            url: 'https://docs.google.com/forms/d/e/1FAIpQLScIvJxCeU-96ODoQMybQMhO95yMjB0hBftsOV0272J6PWDK6g/formResponse',
+            url: 'https://docs.google.com/forms/u/1/d/e/1FAIpQLSff5ctf9pYndw9ml3RqAOQgJa8sf7YvNaYWtatIq8by8UxDvw/formResponse',
             data: data,
             error: function(xhr, status, error){
                 document.location.href = "final_page.html";

@@ -12,7 +12,7 @@ function GetMap() {
 
     map = new Microsoft.Maps.Map('#myMap', {
         center: new Microsoft.Maps.Location(44.643, 10.925229),
-        zoom: 17,
+        zoom: 14,
     });
 
     // initialize infobox for future use
@@ -57,61 +57,38 @@ function GetMap() {
     document.getElementById('infoBtn').removeAttribute('hidden');
 }
 
+function getValue(elem) {
+    if(elem === null)
+        return "";
+    if(elem.v === null)
+        return "";
+    return elem.v.toString();
+}
+
 // parse markers from row input json
 function parseMarkers() {
     let text;
     text = jsonData;
+    text = text.split("setResponse(")[1].slice(0, -2);
     if (text !== "") {
-        let entries = JSON.parse(text).feed.entry;
-        for(let i = 0; i < entries.length; i++) {
-            let cell = entries[i]['gs$cell'];
-            let row = cell.row - 2;  // spreadsheets counts from 1 and first row contains labels
-            let col = cell.col;
-            let val = cell['$t'];
-            if (row >= 0) {
-                if (pinList[row] === undefined) {
-                    pinList[row] = {  // initialize with default values
-                        name: "",
-                        title: "",
-                        description: "",
-                        location: {},
-                    };
-                }
-                switch (col) {
-                    case '2':
-                        pinList[row].name = val;
-                        break;
-                    case '10':
-                        let parts = val.split(')');
-                        pinList[row].goalNum = parts[0];
-                        pinList[row].goalText = parts[1];
-                        break;
-                    case '11':
-                        pinList[row].date = val;
-                        break;
-                    case '7':
-                        pinList[row].title = val;
-                        break;
-                    case '3':
-                        pinList[row].description = val;
-                        break;
-                    case '4':
-                        pinList[row].location.lat = val;
-                        break;
-                    case '5':
-                        pinList[row].location.lng = val;
-                        break;
-                    case '6':
-                        pinList[row].link = val;
-                        break;
-                    case '8':
-                        pinList[row].image = val;
-                        break;
-                    case '9':
-                        pinList[row].approved = val;
-                        break;
-                }
-            }
+        let rows = JSON.parse(text).table.rows;
+        for(let i = 0; i < rows.length; i++) {
+            let r = rows[i].c;
+            let goal = getValue(r[2]).split(') ');
+            pinList[i] = {  // initialize with default values
+                name: getValue(r[1]),
+                goalNum: goal[0],
+                goalText: goal[1],
+                date: getValue(r[3]),
+                location: {
+                    lat: getValue(r[4]),
+                    lng: getValue(r[5])
+                },
+                title: getValue(r[6]),
+                description: getValue(r[7]),
+                link: getValue(r[8]),
+                approved: getValue(r[9]),
+            };
         }
     }
 }
@@ -124,12 +101,9 @@ function displayInfobox(event) {
 
     body.push('<div class="infowindow-content">');
     body.push('<p>');
-    /*if(!(pin.metadata.image === undefined)) {  // if image is defined
-        body.push('<img class="image" src="' + pin.metadata.image + '" alt="">');
-    }*/
     body.push('<img class="image" src="' + imageBase + pin.metadata.goalNum + '.jpg' + '" alt="">')
     body.push(pin.metadata.description + '</p>');
-    if (!(pin.metadata.link === undefined)) {  // if link is defined
+    if (!(pin.metadata.link === "")) {  // if link is defined
         body.push('<div class="bottomtext"><a href="' + pin.metadata.link + '" target=_blank>Scopri di più...</a></div>');
     }
     body.push('</div>');

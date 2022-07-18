@@ -2,10 +2,9 @@ var positions = [];
 
 function geolocate() {
     const data = {
-        addressdetails: 1,
         city: document.getElementById("citta").value,
         country: 'Italia',
-        state: document.getElementById("regione").value,
+        state: document.getElementById("regione").text,
         street: document.getElementById("strada").value,
         format: 'json',
     };
